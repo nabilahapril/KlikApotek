@@ -41,7 +41,7 @@ Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
     Route::post('penjualan.hapus', 'PenjualanController@hapus')->name('penjualan.hapusOrder');
     Route::get('penjualan.datajual', 'PenjualanController@datajual')->name('penjualan.datajual');
 
-    Route::post('pembayaran.store', 'PembayaranController@store')->name('simpanPenjualan');
+    Route::get('pembayaran.store', 'PembayaranController@store')->name('simpanPenjualan');
     Route::get('/cetaknota', 'PenjualanController@cetakNota');
     Route::get('cetak','PenjualanController@cetak')->name('cetak');
     Route::get('/export_excel', 'PenjualanController@export_excel');
