@@ -3,11 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use\App\Models\Obat;
-use\App\Models\Pasien;
-use\App\Models\StockObat;
-use\App\Models\Penjualan;
-use\App\Models\Pembayaran;
+use App\Models\Obat;
+use App\Models\Pasien;
+use App\Models\StockObat;
+use App\Models\Penjualan;
+use App\Models\Pembayaran;
 use GrahamCampbell\ResultType\Result;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
