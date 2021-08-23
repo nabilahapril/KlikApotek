@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>Klik Apotek</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -60,7 +60,7 @@
          
          </div>
     <a href="index3.html" class="brand-link">
-     
+    <i class="fas fa-hospital"></i>
       <span class="brand-text font-weight-light">Apotek</span>
     </a>
 
@@ -68,10 +68,9 @@
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-         
-        </div>
+     
         <div class="info">
+        
           <a href="#" class="d-block">{{Auth::user()->name}}</a>
         </div>
       </div>
@@ -84,7 +83,7 @@
         @role("owner")
         <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
+            <i class="fas fa-folder"></i>
               <p>
                 Data Master
                 <i class="fas fa-angle-left right"></i>
@@ -94,25 +93,25 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="{{route('obat.index')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <i class="fas fa-book-medical"></i>
                   <p>Katalog Obat</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="{{route('stock.index')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <i class="fas fa-cubes"></i>
                   <p>Stock Obat</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="{{('penjualan.datajual')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <i class="fas fa-chart-bar"></i>
                   <p>Data Penjualan</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="{{route('supplier.index')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <i class="fas fa-users"></i>
                   <p>Data Supplier</p>
                 </a>
               </li>
@@ -124,7 +123,7 @@
           </li>
               <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
+            <i class="fas fa-file-invoice-dollar"></i>
               <p>
                 Transaksi
                 <i class="right fas fa-angle-left"></i>
@@ -133,13 +132,13 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="{{('penjualan')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <i class="fas fa-cash-register"></i>
                   <p>Penjualan Barang</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="{{route('cetak')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <i class="fas fa-print"></i>
                   <p>Cetak Nota</p>
                 </a>
               </li>
@@ -153,13 +152,13 @@
           @role('gudang')
           <li class="nav-item">
             <a href="{{route('obat.index')}}" class="nav-link">
-      
+            <i class="fas fa-book-medical"></i>
               <p>Katalog Obat</p>
             </a>
           </li>
           <li class="nav-item">
             <a href="{{route('stock.index')}}" class="nav-link">
-      
+            <i class="fas fa-cubes"></i>
               <p>Stock Obat</p>
             </a>
           </li>
@@ -168,19 +167,19 @@
           @role('kasir')
           <li class="nav-item">
             <a href="{{route('stock.index')}}" class="nav-link">
-      
+            <i class="fas fa-cubes"></i>
               <p>Stock Obat</p>
             </a>
           </li>
           <li class="nav-item">
             <a href="{{('penjualan')}}" class="nav-link">
-      
+            <i class="fas fa-cash-register"></i>
               <p>Transaksi Penjualan</p>
             </a>
           </li>
           <li class="nav-item">
                 <a href="{{route('cetak')}}" class="nav-link">
-                
+                <i class="fas fa-print"></i>
                   <p>Cetak Nota</p>
                 </a>
               </li>
